@@ -17,7 +17,7 @@ import org.json.JSONObject
 import java.util.*
 
 
-class NativeAdView(private val context: Context?, messenger: BinaryMessenger?, viewId: Int, arguments: Any)
+class NativeAdView(private val context: Context, messenger: BinaryMessenger?, viewId: Int, arguments: Any)
     : PlatformView, EventChannel.StreamHandler, MethodCallHandler {
     private var webView: WebView? = null
     private var eventSink: EventSink? = null
